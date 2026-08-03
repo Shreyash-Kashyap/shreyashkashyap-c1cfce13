@@ -3,11 +3,33 @@ import { motion } from "motion/react";
 import { Reveal, SectionHeading } from "./reveal";
 import { CERTIFICATIONS, PROFILE, PROJECTS, SKILL_GROUPS, TIMELINE } from "./data";
 
-const ACCENT: Record<string, { text: string; bg: string; border: string }> = {
-  iris: { text: "text-iris", bg: "bg-iris/12", border: "hover:border-iris/60" },
-  cyan: { text: "text-cyan", bg: "bg-cyan/12", border: "hover:border-cyan/60" },
-  amber: { text: "text-amber", bg: "bg-amber/12", border: "hover:border-amber/60" },
-  rose: { text: "text-rose", bg: "bg-rose/12", border: "hover:border-rose/60" },
+type AccentKey = "iris" | "cyan" | "amber" | "rose";
+
+const ACCENT: Record<AccentKey, { text: string; bg: string; dot: string; border: string }> = {
+  iris: {
+    text: "text-iris",
+    bg: "bg-iris/12",
+    dot: "bg-iris",
+    border: "hover:border-iris/60",
+  },
+  cyan: {
+    text: "text-cyan",
+    bg: "bg-cyan/12",
+    dot: "bg-cyan",
+    border: "hover:border-cyan/60",
+  },
+  amber: {
+    text: "text-amber",
+    bg: "bg-amber/12",
+    dot: "bg-amber",
+    border: "hover:border-amber/60",
+  },
+  rose: {
+    text: "text-rose",
+    bg: "bg-rose/12",
+    dot: "bg-rose",
+    border: "hover:border-rose/60",
+  },
 };
 
 export function About() {
@@ -74,9 +96,7 @@ export function Skills() {
             <Reveal key={group.title} delay={i * 0.06}>
               <div className={`surface-card h-full p-6 hover:-translate-y-1 ${accent.border}`}>
                 <div className="flex items-center gap-3">
-                  <span className={`size-2.5 rounded-full ${accent.bg} ${accent.text}`}
-                    style={{ backgroundColor: "currentColor" }}
-                  />
+                  <span className={`size-2.5 rounded-full ${accent.dot}`} />
                   <h3 className="font-display text-lg font-semibold">{group.title}</h3>
                 </div>
                 <ul className="mt-5 flex flex-wrap gap-2">
@@ -145,9 +165,7 @@ export function Work() {
                     ))}
                   </ul>
                 </div>
-                <ArrowUpRight
-                  className={`size-6 shrink-0 text-muted-foreground transition-all group-hover:-translate-y-1 group-hover:translate-x-1 ${`group-hover:${accent.text}`}`}
-                />
+                <ArrowUpRight className="size-6 shrink-0 text-muted-foreground transition-all group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-primary" />
               </motion.a>
             </Reveal>
           );
