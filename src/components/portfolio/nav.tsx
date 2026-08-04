@@ -25,7 +25,7 @@ export function Nav() {
           href="#top"
           className="pl-2 font-display text-sm font-bold tracking-tight sm:text-base"
         >
-          shreyash<span className="text-primary">.</span>
+          Shreyash<span className="text-primary">.</span>
         </a>
         <ul className="hidden items-center gap-1 md:flex">
           {NAV.map((item) => (
