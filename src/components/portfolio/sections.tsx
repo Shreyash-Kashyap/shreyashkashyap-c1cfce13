@@ -1,6 +1,7 @@
 import { ArrowUpRight, Github, Linkedin, Mail, Phone } from "lucide-react";
 import { motion } from "motion/react";
 import { Reveal, SectionHeading } from "./reveal";
+import { ContactForm } from "./contact-form";
 import { CERTIFICATIONS, PROFILE, PROJECTS, SKILL_GROUPS, TIMELINE } from "./data";
 
 type AccentKey = "iris" | "cyan" | "amber" | "rose";
@@ -213,7 +214,10 @@ export function Contact() {
           Hiring, collaborating, or just want to talk shop about Python and AI tooling? My
           inbox is genuinely open.
         </p>
-        <div className="mt-10 flex flex-wrap justify-center gap-3">
+        <div className="mt-10">
+          <ContactForm />
+        </div>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a
             href={`mailto:${PROFILE.email}`}
             className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
