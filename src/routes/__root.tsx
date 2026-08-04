@@ -83,17 +83,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Portfolio of Shreyash Kashyap, CSE (Data Science) graduate building AI-driven applications with Python, MySQL and the MERN stack.",
+          "Chroma Palette Portfolio showcases color combinations with light, dark, and greyish modes.",
       },
       { name: "author", content: "Shreyash Kashyap" },
       { property: "og:title", content: "Shreyash Kashyap — Software Developer" },
       {
         property: "og:description",
-        content: "AI-driven applications, clean systems, and practical software engineering.",
+        content: "Chroma Palette Portfolio showcases color combinations with light, dark, and greyish modes.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Shreyash Kashyap — Software Developer" },
+      { name: "twitter:description", content: "Chroma Palette Portfolio showcases color combinations with light, dark, and greyish modes." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/263b1130-690d-4899-90a9-38602d77859b/id-preview-81509600--8c72963c-430f-43b8-ada1-fb242ec64e99.lovable.app-1785807510477.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/263b1130-690d-4899-90a9-38602d77859b/id-preview-81509600--8c72963c-430f-43b8-ada1-fb242ec64e99.lovable.app-1785807510477.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -106,7 +110,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,

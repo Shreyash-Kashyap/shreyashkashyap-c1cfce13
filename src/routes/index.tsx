@@ -6,17 +6,17 @@ import { About, Contact, Footer, Journey, Skills, Work } from "@/components/port
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Shreyash Kashyap — Software Developer & AI Builder" },
+      { title: "Shreyash Kashyap — Software Developer" },
       {
         name: "description",
         content:
-          "Shreyash Kashyap builds AI-driven applications with Python, MySQL and the MERN stack. Projects, experience and contact in one place.",
+          "Chroma Palette Portfolio showcases color combinations with light, dark, and greyish modes.",
       },
-      { property: "og:title", content: "Shreyash Kashyap — Software Developer & AI Builder" },
+      { property: "og:title", content: "Shreyash Kashyap — Software Developer" },
       {
         property: "og:description",
         content:
-          "CSE (Data Science) engineer shipping AI-driven applications and scalable software systems.",
+          "Chroma Palette Portfolio showcases color combinations with light, dark, and greyish modes.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
