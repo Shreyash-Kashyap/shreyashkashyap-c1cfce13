@@ -5,7 +5,7 @@ export const PROFILE = {
   phone: "9031991499",
   github: "https://github.com/Shreyash-Kashyap",
   linkedin: "https://www.linkedin.com/in/shreyash-kashyap-680623323",
-  location: "Durgapur, India",
+  location: "Bhagalpur, India",
 };
 
 export const NAV = [
@@ -96,16 +96,22 @@ export const TIMELINE = [
       "Planned, built and shipped real-world AI SaaS tools. Hands-on with testing and automation features for client-facing applications.",
   },
   {
-    period: "2022 — Jun 2026",
+    period: "2022 — 2026",
     title: "B.Tech, CSE (Data Science)",
     org: "Dr. B. C. Roy Engineering College, Durgapur",
-    detail: "CGPA 6.77 (till 6th sem). Core focus on DSA, DBMS, OS and applied data science.",
+    detail: "Core focus on DSA, DBMS, OS and applied data science.",
   },
   {
     period: "2020 — 2022",
     title: "Senior Secondary, CBSE",
-    org: "N.N. International School",
+    org: "N.N. International School, Sultanganj, Bihar",
     detail: "Science stream, 62%.",
+  },
+  {
+    period: "2019 — 2020",
+    title: "Secondary, ICSE",
+    org: "St. Teresa's School, Bhagalpur, Bihar",
+    detail: "Science stream, 75.8%.",
   },
 ];
 
@@ -118,5 +124,5 @@ export const CERTIFICATIONS = [
 export const STATS = [
   { value: "3+", label: "Shipped projects" },
   { value: "3 mo", label: "AI SaaS internship" },
-  { value: "2026", label: "Graduating" },
+  { value: "2026", label: "Graduated" },
 ];

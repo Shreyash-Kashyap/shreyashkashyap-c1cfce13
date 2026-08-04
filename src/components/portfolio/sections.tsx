@@ -1,4 +1,4 @@
-import { ArrowUpRight, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Phone } from "lucide-react";
 import { motion } from "motion/react";
 import { Reveal, SectionHeading } from "./reveal";
 import { ContactForm } from "./contact-form";
@@ -43,7 +43,7 @@ export function About() {
       <div className="mt-10 grid gap-8 md:grid-cols-[1.4fr_1fr]">
         <Reveal delay={0.05} className="space-y-5 text-lg leading-relaxed text-muted-foreground">
           <p>
-            I'm a Computer Science (Data Science) engineer from Durgapur who prefers building
+            I'm a Computer Science (Data Science) engineer who prefers building
             over theorising. Python and MySQL are my home ground — I use them to move data
             around cleanly, then wrap the result in interfaces people actually enjoy using.
           </p>
@@ -219,12 +219,6 @@ export function Contact() {
         </div>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a
-            href={`mailto:${PROFILE.email}`}
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
-          >
-            <Mail className="size-4" /> Email me
-          </a>
-          <a
             href={PROFILE.github}
             target="_blank"
             rel="noreferrer"
@@ -242,7 +236,7 @@ export function Contact() {
           </a>
           <a
             href={`tel:${PROFILE.phone}`}
-            className="inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm text-muted-foreground transition-colors hover:text-foreground"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-6 py-3 text-sm font-semibold backdrop-blur transition-colors hover:bg-accent"
           >
             <Phone className="size-4" /> {PROFILE.phone}
           </a>
