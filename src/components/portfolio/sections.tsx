@@ -1,4 +1,4 @@
-import { ArrowUpRight, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Phone } from "lucide-react";
 import { motion } from "motion/react";
 import { Reveal, SectionHeading } from "./reveal";
 import { ContactForm } from "./contact-form";
