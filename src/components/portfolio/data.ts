@@ -4,7 +4,7 @@ export const PROFILE = {
   email: "shreyashkashyap121@gmail.com",
   phone: "9031991499",
   github: "https://github.com/Shreyash-Kashyap",
-  linkedin: "https://www.linkedin.com/in/shreyash-kashyap",
+  linkedin: "https://www.linkedin.com/in/shreyash-kashyap-680623323",
   location: "Durgapur, India",
 };
 
