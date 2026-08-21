@@ -1,6 +1,5 @@
 import { ArrowDownRight, ArrowUpRight, FileDown, Mail } from "lucide-react";
 import { motion } from "motion/react";
-import photo from "@/assets/shreyash.jpeg.asset.json";
 import resume from "@/assets/resume.pdf.asset.json";
 import { PROFILE, STATS, MARQUEE } from "./data";
 
@@ -98,7 +97,7 @@ export function Hero() {
           <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-iris/40 via-cyan/25 to-amber/30 blur-2xl" />
           <div className="relative overflow-hidden rounded-[2rem] border border-border bg-card glow-ring">
             <img
-              src={photo.url}
+              src="/profile.jpeg"
               alt="Portrait of Shreyash Kashyap"
               className="h-full w-full object-cover"
               width={640}
